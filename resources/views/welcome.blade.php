@@ -12,7 +12,7 @@
 
     <!-- Styles / Scripts -->
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/js/app.js', 'resources/js/visibility_observer.js'])
+        @vite(['resources/js/app.js', 'resources/js/visibility_observer.js', 'resources/js/tracker.js'])
     @endif
 </head>
 <body>
