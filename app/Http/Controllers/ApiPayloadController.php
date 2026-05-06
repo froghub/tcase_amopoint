@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ApiPayloadController extends Controller
 {
-    public function index(ApiPayloadService $apiPayloadService)
+    public function __invoke(ApiPayloadService $apiPayloadService)
     {
         return $apiPayloadService->list();
     }
